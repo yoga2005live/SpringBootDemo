@@ -8,9 +8,10 @@ import java.util.*;
 
 @Controller
 public class Greeting {
-
+	private int a;
 	@RequestMapping("/greetings")
 	public @ResponseBody String greeting() {
-		return "Rest Spring";
+		
+		return "Rest Spring " + " " + a++;
 	}
 }
